@@ -6,35 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
 <body>
     <nav class="nav">
-        <div class="nav__items">
-            <a href="#home" class="nav__item">Home</a>
-            <a href="#about-us" class="nav__item">O nas</a>
-            <a href="#offers" class="nav__item">Oferta</a>
-            <a href="#contact" class="nav__item">Kontakt</a>
+    <div class="wrapper">
+        <div class="nav__main">
+            <div class="nav__logo">
+                <a class="nav__brand" href="#">
+                    <img src="./dist/img/icons/tree.png" alt="Ikona choinki" class="nav__img" />Forest</a>
+            </div>
+
+            <div class="nav__items nav__desktop">
+                <ul class="nav__list">
+                    <li>
+                        <a href="index.html#home" class="nav__item active">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about-us" class="nav__item">O nas</a>
+                    </li>
+                    <li>
+                        <a href="index.html#offer" class="nav__item">Oferta</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav__item">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="hamburger">
+                <img class="hamburger__icon" src="./dist/img/icons/burger.png" alt="" />
+            </button>
+
+            <div class="nav__mobile-items nav__mobile">
+                <ul class="nav__mobile-list">
+                    <li>
+                        <a href="index.html#home" class="nav__mobile-item">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about-us" class="nav__mobile-item">O nas</a>
+                    </li>
+                    <li>
+                        <a href="index.html#offer" class="nav__mobile-item">Oferta</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav__mobile-item">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </nav>
+    </div>
+</nav>
     <button class="burger-btn">
-        <div class="burger-btn__box">
-            <div class="burger-btn__bars"></div>
-        </div>
-    </button>
+    <div class="burger-btn__box">
+        <div class="burger-btn__bars"></div>
+    </div>
+</button>
     <header class="header section">
+        <div class="hero-shadow"></div>   
         <p class="header__text">Forest Group</p>
         <h1 class="header__heading">Najpiękniejszy park w Twojej okolicy!</h1>
+
     </header>
     <main>
-        <section id="about-us" class="about-us">
+        <section id="about" class="about">
             <h2>O NAS</h2>
-            <div class="img">
+            <div class="about__img">
                 <img src="../dist/img/waters-small.jpg" alt="A forest lake with an island in the middle.">
             </div>
-            <div class="discription">
-                <h3>Niezapomniane przygody</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            <div class="about__discription">
+                <h3 class="about__discription-title">Niezapomniane przygody</h3>
+                <p class="about__discription-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -90,47 +137,46 @@
                     <button type="button" class="btn">Wybierz</button>
                 </div>
             </div>
-            <p>Zapraszamy po więcej <span><a href="oferts.html">ofert</a></span> i <span><a
-                        href="contakt.html">kontakt</a></span>.</p>
+
         </section>
     </main>
     <footer class="footer">
-        <div class="wrapper">
-            <div class="footer__boxes">
-                <div class="footer__box">
-                    <h3 class="footer__box-title"><i class="fas fa-kiwi-bird"></i> TP Co.</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, ut alias repellendus ex porro
-                        corporis fugit totam hic cupiditate dolores.</p>
-                    <div class="footer__box-special">
-                        <a href="#" class="footer__box-link"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#" class="footer__box-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer__box footer__box-desktop">
-                    <h3 class="footer__box-title">Wyspy</h3>
-                    <ul class="footer__box-list">
-                        <li class="footer__box-list-item"><a href="#">Wyspa Tiki Tiki</a></li>
-                        <li class="footer__box-list-item"><a href="#">Wyspa Taki Taki</a></li>
-                        <li class="footer__box-list-item"><a href="#">Wyspa Nabu</a></li>
-                        <li class="footer__box-list-item"><a href="#">Pozostałe wyspy</a></li>
-                    </ul>
-                </div>
-                <div class="footer__box footer__box-desktop">
-                    <h3 class="footer__box-title">O Firmie</h3>
-                    <ul class="footer__box-list">
-                        <li class="footer__box-list-item"><a href="#">O nas</a></li>
-                        <li class="footer__box-list-item"><a href="#">Zarząd</a></li>
-                        <li class="footer__box-list-item"><a href="#">Kariera</a></li>
-                        <li class="footer__box-list-item"><a href="#">FAQ</a></li>
-                    </ul>
+    <div class="wrapper">
+        <div class="footer__boxes">
+            <div class="footer__box">
+                <h3 class="footer__box-title"><i class="fas fa-kiwi-bird"></i> TP Co.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, ut alias repellendus ex porro
+                    corporis fugit totam hic cupiditate dolores.</p>
+                <div class="footer__box-special">
+                    <a href="#" class="footer__box-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="footer__box-link"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
+
+            <div class="footer__box footer__box-desktop">
+                <h3 class="footer__box-title">Wyspy</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item"><a href="#">Wyspa Tiki Tiki</a></li>
+                    <li class="footer__box-list-item"><a href="#">Wyspa Taki Taki</a></li>
+                    <li class="footer__box-list-item"><a href="#">Wyspa Nabu</a></li>
+                    <li class="footer__box-list-item"><a href="#">Pozostałe wyspy</a></li>
+                </ul>
+            </div>
+            <div class="footer__box footer__box-desktop">
+                <h3 class="footer__box-title">O Firmie</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item"><a href="#">O nas</a></li>
+                    <li class="footer__box-list-item"><a href="#">Zarząd</a></li>
+                    <li class="footer__box-list-item"><a href="#">Kariera</a></li>
+                    <li class="footer__box-list-item"><a href="#">FAQ</a></li>
+                </ul>
+            </div>
         </div>
-        <hr>
-        <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Tropical Paradise</p>
-    </footer>
+    </div>
+    <hr>
+    <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Tropical Paradise</p>
+</footer>
     <script src="dist/js/main.min.js"></script>
 </body>
 

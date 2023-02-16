@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Raleway", sans-serif;
+	background-color: white;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+////NAV///
+
+.nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 100;
+
+	&__main {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 83px;
+	}
+
+	&__logo {
+		padding: 1em 5.5em;
+	}
+
+	&__brand {
+		padding: 0.2em 0.4em;
+		font-size: 3.1rem;
+		color: black;
+		text-decoration: none;
+		transition: color 0.3s;
+	}
+
+	&__brand:hover {
+		color: rgb(91, 91, 91);
+	}
+
+	&__img {
+		height: 29px;
+	}
+
+	&__items {
+		padding: 2em 3.5em;
+	}
+
+	&__list {
+		display: flex;
+		list-style: none;
+	}
+
+	&__item {
+		padding: 2em;
+		color: black;
+		text-decoration: none;
+		transition: background-color 0.3s, color 0.3s;
+	}
+
+	&__item:hover {
+		color: #fff;
+		background-color: black;
+	}
+
+	&__mobile {
+		display: none;
+		transform: translateX(200%);
+		transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+
+		&--active {
+			transform: translateX(0);
+		}
+
+		&-items {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100vh;
+			width: 100vw;
+			list-style: none;
+			background-color: rgb(142, 204, 142);
+		}
+
+		&-list {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			list-style: none;
+
+			li {
+				margin: 2em 0;
+			}
+		}
+
+		&-item {
+			padding: 0.2em;
+			font-size: 5rem;
+			color: black;
+			text-decoration: none;
+			transition: color 0.3s;
+
+			&:hover {
+				color: gainsboro;
+			}
+		}
+	}
+}
+
+.active {
+	color: #fff;
+	background-color: black;
+}
+
+//Header
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	height: 45vh;
+	text-align: center;
+	color: white;
+	background-image: url("../img/jungle_big.jpg");
+	background-size: cover;
+	background-position-y: 70%;
+	// background-position: center;
+	background-attachment: fixed;
+	background-attachment: scroll;
+	overflow: hidden;
+
+	&__heading {
+		font-family: "Raleway", sans-serif;
+		font-size: 6rem;
+		margin-left: 15%;
+		z-index: 10;
+	}
+	&__text {
+		margin-left: 15%;
+		font-size: 4rem;
+		z-index: 10;
+	}
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+	}
+}
